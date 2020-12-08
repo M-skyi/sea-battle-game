@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(153, 151, 151, 0.657);
+}
+
+table td {
+    border: 2px solid orange;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.x-coordinates,
+.y-coordinates {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.x-coordinates td,
+.y-coordinates,.block-input td {
+    border: none;
+}
+.text-result{
+    height: 30px;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    right: 150px;
+    color: orange;
+    font-weight: 700;
+    font-size: 15px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.top{
+    margin-top: 100px;
+}
+.block-input{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.submit-inp{
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
