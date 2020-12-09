@@ -62,4 +62,14 @@ table {
     margin-left: 10px;
     letter-spacing: 1px;
 }
+.miss{
+    background-image: url(img/miss-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hit{
+    background-image: url(img/ship.png);
+    background-repeat: no-repeat;
+    background-position: center
+}
 
