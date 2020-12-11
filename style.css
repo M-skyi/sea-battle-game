@@ -10,7 +10,7 @@ body {
 }
 
 table td {
-    border: 2px solid orange;
+    border: 1px solid orange;
     height: 70px;
     width: 70px;
     text-align: center;
