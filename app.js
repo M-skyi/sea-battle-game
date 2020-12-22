@@ -39,23 +39,14 @@ let model = {
                 view.displayHit(guess);
                 view.displayMessage("hit")
                 if (this.isSunk(ship)) {
+                    view.displayMessage("You sank my ship")
                     this.shipsSunk++
-                    if (this.shipsSunk === 1) {
-                        view.displayMessage(`You sank ${this.shipsSunk} my ship !`)
-                    }
-                    if (this.shipsSunk > 1) {
-                        view.displayMessage(`You sank ${this.shipsSunk} of my ships !`)
-                    }
-                    if (this.shipsSunk === 3) {
-                        view.displayMessage(`You sank ${this.shipsSunk} of my ships! GAME OVER`)
-                    }
                 }
                 return true
-            }if (indexGuess < 0 && indexGuess !== 0 ) {
-                view.displayMiss(guess)
-                view.displayMessage("miss")
             }
         }
+        view.displayMiss(guess)
+        view.displayMessage("You missed")
         return false
     },
     isSunk: function (ship) {
@@ -67,11 +58,7 @@ let model = {
         return true
     }
 }
-model.fire("30")
+model.fire("03")
 model.fire("31")
-model.fire("32")
-model.fire("33")
-
-
-
-
+model.fire("55")
+model.fire("34")
